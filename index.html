@@ -1,63 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Koji Nuico's Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous"/> 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-</head>
-<body>
-  <header>
-    <div class='logo'>
-      <img src="/Assets/camera.png" alt="">
-    </div>
-    <button class="nav-toggle" aria-label="toggle navigation">
-      <span class="hamburguer"></span>
-    </button>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-        <li class="nav__item"><a href="#services" class="">My Services</a></li>
-        <li class="nav__item"><a href="#" class="">About Me</a></li>
-        <li class="nav__item"><a href="#" class="">My Work</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Koji Nuico's Portfolio</title>
+    <!--Normalize-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
+    <!--font-awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="public/style/style.css">
+
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="Assets/camera.png" alt="" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburguer"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__lin">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about-me" class="nav__lin">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__lin">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Koji Nuico</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro"> PHOTOGRAPHER</p>
+      <img class="intro__img"
+        src="Assets/default-placeholder-image.png"
+        alt="photographer smiling"
+      >
+    </section>
+
+    <!-- My Services -->
+
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Service 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi
+            assumenda quisquam architecto voluptates porro voluptatem facilis
+            temporibus doloremque quae, ut velit nisi doloribus dolores ab,
+            repudiandae cum hic nostrum facere!
+          </p>
+        </div>
+        <div class="service">
+          <h3>Service 3</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+            reiciendis laudantium totam eius obcaecati consectetur tempore
+            deleniti, maiores quisquam illo. Totam fugit, impedit eligendi iste
+            minus amet! Officiis, obcaecati quidem.
+          </p>
+        </div>
+        <div class="service">
+          <h3>Service 3</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+            nesciunt aut, nobis magnam aliquid adipisci qui reiciendis tenetur
+            sunt, expedita in repudiandae tempore temporibus officiis voluptates
+            veniam quisquam. Nihil, exercitationem.
+          </p>
+        </div>
+      </div>
+
+      <a href="#work" class="button">My Work</a>
+    </section>
+
+    <!-- About me -->
+
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__title section__title--about"></p>
+
+      <div class="about-me__body">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non magnam fuga quo sint praesentium doloremque incidunt sed doloribus dignissimos reiciendis, eligendi tenetur ratione nulla tempore ipsam? Veniam cupiditate at illo.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi cumque ducimus at repellendus vero, magni facere perspiciatis tempora perferendis iure pariatur commodi cupiditate expedita, optio nobis labore blanditiis nisi in?</p>
+      </div>
+
+      <img
+        src="Assets/default-placeholder-image.png"
+        alt="photographer posing"
+      />
+
+      <p class="section__subtitle section__subtitle--about-me">photographer</p>
+      <img
+        src="Assets/default-placeholder-image.png"
+        alt="photographer smiling"
+      />
+    </section>
+
+    <!--My Work-->
+
+    <section class="mywork" id="work">
+      <h2 class="section__title section__title--work">My work</h2>
+      <p class="section__subtitle section__subtitle--work"></p>
+
+      <div class="portfolio">
+        <!--Portfolio Item 01-->
+        <a href="#" class="portfolio__item">
+          <img
+            src="Assets/default-placeholder-image.png"
+            alt="1"
+            class="portfolio_img"
+          >
+        </a>
+        <!--Portfolio Item 02-->
+        <a href="#" class="portfolio__item">
+          <img
+            src="Assets/default-placeholder-image.png"
+            alt="2"
+            class="portfolio_img"
+          >
+        </a>
+        <!--Portfolio Item 03-->
+        <a href="#" class="portfolio__item">
+          <img
+            src="Assets/default-placeholder-image.png"
+            alt="3"
+            class="portfolio_img"
+          >
+        </a>
+        <!--Portfolio Item 04-->
+        <a href="#" class="portfolio__item">
+          <img
+            src="Assets/default-placeholder-image.png"
+            alt="4"
+            class="portfolio_img"
+          >
+        </a>
+        <!--Portfolio Item 05-->
+        <a href="#" class="portfolio__item">
+          <img
+            src="Assets/default-placeholder-image.png"
+            alt="5"
+            class="portfolio_img"
+          >
+        </a>
+        <!--Portfolio Item 06-->
+        <a href="#" class="portfolio__item">
+          <img
+            src="Assets/default-placeholder-image.png"
+            alt="6"
+            class="portfolio_img"
+          >
+        </a>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+      <a href="mailto:" class="footer__link">Contact me</a>
+      <ul class="social-list">
+        <li class="social-list__item"><a class="social-list__link" href="">A here</a></li>
+        <li class="social-list__item"><a class="social-list__link" href="">B here</a></li>
+        <li class="social-list__item"><a class="social-list__link" href="">C here</a></li>
       </ul>
-    </nav>
-  </header>
-
-<!-- Introduction -->
-
-<section class="intro" id="home">
-  <h1 class="section__title section__title--intro">
-    Hi, I'm <strong>Koji</strong>
-  </h1>
-  <p class="section__subtitle section__subtitle--intro">photographer</p>
-  <img src="/Assets/default-placeholder-image.png" alt="photographer smiling">
-</section>
-
-<!-- My Services -->
-
-<section class="services" id="myservices">
-  <h2 class="section__title section__title--services">What I do</h2>
-  <div class="services">
-    <div class="service">
-      <h3>Service 1</h3>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi assumenda quisquam architecto voluptates porro voluptatem facilis temporibus doloremque quae, ut velit nisi doloribus dolores ab, repudiandae cum hic nostrum facere!</p>
-    </div>
-    <div class="service">
-      <h3>Service 3</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque reiciendis laudantium totam eius obcaecati consectetur tempore deleniti, maiores quisquam illo. Totam fugit, impedit eligendi iste minus amet! Officiis, obcaecati quidem.</p>
-    </div>
-    <div class="service">
-      <h3>Service 3</h3>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt aut, nobis magnam aliquid adipisci qui reiciendis tenetur sunt, expedita in repudiandae tempore temporibus officiis voluptates veniam quisquam. Nihil, exercitationem.</p>
-    </div>
-  </div>
-
-  <a href="#work" class="button">My Work</a> 
-
-</section>
-
-</body>
+    </footer>
+  </body>
 </html>
