@@ -62,13 +62,27 @@ strong {
   font-weight: var(--fw-bold);
 }
 
+:focus {
+  outline: 3px solid var(--clr-accent);
+  outline-offset: 3px;
+}
+
 .btn {
   display: inline-block;
-  padding: .5em 1.5em;
+  padding: .5em 2.5em;
   background: var(--clr-accent);
   color: var(--clr-dark);
   text-decoration: none;
   cursor: pointer;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out
+}
+
+.btn:hover {
+  transform: scale(1.25);
 }
 
 /* Typography */
@@ -182,6 +196,10 @@ strong {
   opacity: 0.25;
 }
 
+.services {
+  margin-bottom: 4em;
+}
+
 .service {
   max-width: 500px;
   margin: 0 auto;
@@ -191,9 +209,62 @@ strong {
   .services {
     display: flex;
     max-width: 1000px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   .service + .service {
     margin-left: 2em;
   }
+}
+
+/* Who I am */
+
+.about-me {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-me__img {
+  box-shadow: var(--bs)
+}
+
+@media (min-width: 600px) {
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-areas: 
+      "title img"
+      "subtitle img"
+      "text img";
+    grid-column-gap: 2em;
+  }
+
+  .section__title--about{
+    grid-area: title;
+  }
+
+  .section__subtitle--about{
+    grid-column: 1 /-1;
+    grid-row: 2;
+    position: relative;
+    left: -1em;
+    width: calc(100% + 3em);
+    padding-left: 2em;
+    padding-right: calc(200px + 4em)
+  }
+
+  .about-me__img {
+    grid-area: img;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+/* My Work */
+/* Implement Instagram carrosel later? */
+
+.mywork {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  text-align: center;
 }
