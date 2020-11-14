@@ -23,24 +23,18 @@
   </head>
   <body>
     <header>
-      <div class="logo">
-        <img src="Assets/camera.png" alt="" />
+      <div class="logo logo-toggle">
+        <img src="Assets/camera.png" alt=""/>
       </div>
       <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburguer"></span>
+        <span class="hamburger"></span>
       </button>
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-          <li class="nav__item">
-            <a href="#services" class="nav__lin">My Services</a>
-          </li>
-          <li class="nav__item">
-            <a href="#about-me" class="nav__lin">About Me</a>
-          </li>
-          <li class="nav__item">
-            <a href="#work" class="nav__lin">My Work</a>
-          </li>
+          <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
         </ul>
       </nav>
     </header>
@@ -53,7 +47,7 @@
       </h1>
       <p class="section__subtitle section__subtitle--intro">photographer</p>
       <img class="intro__img"
-        src="Assets/default-placeholder-image.png"
+        src="Assets/koji_snow.jpg"
         alt="photographer smiling"
       >
     </section>
@@ -106,7 +100,7 @@
       </div>
 
       <img
-        src="Assets/default-placeholder-image.png"
+        src="Assets/koji_font.jpg"
         alt="photographer smiling"
         class="about-me__img"
       />
@@ -116,68 +110,79 @@
 
     <section class="mywork" id="work">
       <h2 class="section__title section__title--work">My work</h2>
-      <p class="section__subtitle section__subtitle--work">follow me @</p>
-
       <div class="portfolio">
         <!--Portfolio Item 01-->
         <a href="#" class="portfolio__item">
           <img
-            src="Assets/default-placeholder-image.png"
+            src="Assets/koji_01.jpg"
             alt="1"
-            class="portfolio_img"
+            class="portfolio__img"
           >
         </a>
         <!--Portfolio Item 02-->
         <a href="#" class="portfolio__item">
           <img
-            src="Assets/default-placeholder-image.png"
+            src="Assets/koji_02.jpg"
             alt="2"
-            class="portfolio_img"
+            class="portfolio__img"
           >
         </a>
         <!--Portfolio Item 03-->
         <a href="#" class="portfolio__item">
           <img
-            src="Assets/default-placeholder-image.png"
+            src="Assets/koji_03.jpg"
             alt="3"
-            class="portfolio_img"
+            class="portfolio__img"
           >
         </a>
         <!--Portfolio Item 04-->
         <a href="#" class="portfolio__item">
           <img
-            src="Assets/default-placeholder-image.png"
+            src="Assets/koji_04.jpg"
             alt="4"
-            class="portfolio_img"
+            class="portfolio__img"
           >
         </a>
         <!--Portfolio Item 05-->
         <a href="#" class="portfolio__item">
           <img
-            src="Assets/default-placeholder-image.png"
+            src="Assets/koji_05.jpg"
             alt="5"
-            class="portfolio_img"
+            class="portfolio__img"
           >
         </a>
         <!--Portfolio Item 06-->
         <a href="#" class="portfolio__item">
           <img
-            src="Assets/default-placeholder-image.png"
+            src="Assets/koji_06.jpg"
             alt="6"
-            class="portfolio_img"
+            class="portfolio__img"
           >
         </a>
+      </div>
+
+      <div>
+          <div id="instafeed">
+            </div>
       </div>
     </section>
 
     <!--Footer-->
-    <footer>
-      <a href="mailto:" class="footer__link">Contact me</a>
-      <ul class="social-list">
-        <li class="social-list__item"><a class="social-list__link" href="">A here</a></li>
-        <li class="social-list__item"><a class="social-list__link" href="">B here</a></li>
-        <li class="social-list__item"><a class="social-list__link" href="">C here</a></li>
-      </ul>
+    <footer class="footer">
+      <p class="footer__link">follow me <a href="https://www.instagram.com/koji.nuico/" class="footer__link"><i class="fab fa-instagram"></i>koji.nuico</a></p>
+
+      <!-- <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="">
+ 
+          </a>
+        </li>
+      </ul> -->
     </footer>
+
+  <script src="Javascript/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
+
+
   </body>
 </html>
