@@ -299,7 +299,7 @@ strong {
 
 .my-services {
   background-color: var(--clr-dark);
-  background-image: url(../../Assets/koji_sky.jpg);
+  background-image: url(../Assets/koji_sky.jpg);
   background-size: cover;
   background-blend-mode: overlay;
   color: var(--clr-light);
