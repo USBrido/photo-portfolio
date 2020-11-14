@@ -1,4 +1,3 @@
-const Instafeed = require('https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js');
 
 const navToggle = document.querySelector('.nav-toggle');
 
